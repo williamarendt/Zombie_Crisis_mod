@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZX3 Rebuild Prototype 0.3</title>
+  <link rel="stylesheet" href="./src/style.css?v=20260328b" />
+</head>
+<body>
+  <div id="hud">
+    <div id="title">ZX3 Rebuild - Prototype 0.3</div>
+    <div id="meta">WASD 移动 | 武器: Pistol(占位) | 僵尸: FlowField寻路追击(绕墙)</div>
+
+    <div id="hpWrap">
+      <div id="hpLabel">HP</div>
+      <div id="hpBar"><div id="hpFill"></div></div>
+      <div id="hpText">100 / 100</div>
+    </div>
+
+    <div id="statusText">状态: 正常</div>
+    <div id="debug">Loading...</div>
+  </div>
+
+  <canvas id="game"></canvas>
+  <script src="./src/game.js?v=20260328b"></script>
+</body>
+</html>
