@@ -1,0 +1,93 @@
+﻿:root {
+  --bg: #ecebe7;
+  --bg2: #dfe2e6;
+  --ink: #1f1f1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at 20% 20%, #f2f2ef 0%, var(--bg) 50%, var(--bg2) 100%);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  display: block;
+  border: 1px solid rgba(30, 30, 26, 0.22);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+  background: #efeee9;
+}
+
+
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(40, 40, 34, 0.2);
+  border-radius: 8px;
+  padding: 10px 12px;
+  z-index: 10;
+  min-width: 300px;
+  backdrop-filter: blur(2px);
+}
+
+#title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#meta,
+#debug,
+#statusText {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+#hpWrap {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 26px 1fr auto;
+  gap: 6px;
+  align-items: center;
+}
+
+#hpLabel {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#hpBar {
+  width: 180px;
+  height: 12px;
+  border: 1px solid #8a8a84;
+  border-radius: 999px;
+  background: #ecece8;
+  overflow: hidden;
+}
+
+#hpFill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #d64343, #f36a5c);
+}
+
+#hpText {
+  font-size: 12px;
+  min-width: 70px;
+  text-align: right;
+}
